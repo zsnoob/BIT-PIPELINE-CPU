@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #-----------------------------------------------------------
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
@@ -12,3 +13,5 @@
 start_gui
 open_project {C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.xpr}
 update_compile_order -fileset sources_1
+=======
+>>>>>>> 4c48aea4f6a93725b0c1b369e5f6b065e4d0bfb2
