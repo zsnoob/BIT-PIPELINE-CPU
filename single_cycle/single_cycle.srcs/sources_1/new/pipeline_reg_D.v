@@ -25,13 +25,13 @@ module pipeline_reg_D(
     input clk,
     input nop,
     
-    input wire [31:0] pc_D      ,
-    input wire [6:0]  opcode    ,
-    input wire [2:0]  funct3    ,
-    input wire [6:0]  funct7    ,
-    input wire [4:0]  reg_ra1   ,
-    input wire [4:0]  reg_ra2   ,
-    input wire [4:0]  reg_wa    ,
+    input wire [31:0] pc_D         ,
+    input wire [6:0]  opcode      ,
+    input wire [2:0]  funct3        ,
+    input wire [6:0]  funct7         ,
+    input wire [4:0]  reg_ra1       ,
+    input wire [4:0]  reg_ra2       ,
+    input wire [4:0]  reg_wa     ,
     input wire [11:0] imm12_s   ,
     input wire [11:0] imm12_i   ,
     input wire [31:0] imm20_e32 ,//写回阶段需要的变量
@@ -62,6 +62,8 @@ module pipeline_reg_D(
         if (!rst) pc_D_reg <= 32'h00000000;
         else if(!nop) begin
             //...
+            pc_D_reg      <= 32'h00000000;
+            opcode_reg    <= 7'b0000000;
         end
         else begin
             pc_D_reg      <= pc_D     ;

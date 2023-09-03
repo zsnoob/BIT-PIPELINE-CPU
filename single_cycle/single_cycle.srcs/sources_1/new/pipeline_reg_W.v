@@ -31,7 +31,7 @@ module pipeline_reg_W(
     input wire [31:0] imm20_e32 ,
     input wire [1:0]  c3        ,
     input wire        reg_we    ,
-    input wire [31:0] reg_rd2   ,
+    input wire [31:0] dmem_rd   ,
     
     output wire [31:0] _pc_W      ,
     output wire [31:0] _alu_out   ,
@@ -39,7 +39,7 @@ module pipeline_reg_W(
     output wire [31:0] _imm20_e32 ,
     output wire [1:0]  _c3        ,
     output wire        _reg_we    ,
-    output wire [31:0] _reg_rd2   
+    output wire [31:0] _dmem_rd   
 
     );
     reg [31:0] pc_W_reg     ;
@@ -48,7 +48,7 @@ module pipeline_reg_W(
     reg [31:0] imm20_e32_reg;
     reg [1:0]  c3_reg       ;
     reg        reg_we_reg   ;
-    reg [31:0] reg_rd2_reg  ;
+    reg [31:0] dmem_rd_reg  ;
     
     always @(posedge clk or negedge rst) begin
         if(!rst) pc_W_reg <= 32'h00000000;
@@ -59,7 +59,7 @@ module pipeline_reg_W(
             imm20_e32_reg <= imm20_e32;
             c3_reg        <= c3       ;
             reg_we_reg    <= reg_we   ;
-            reg_rd2_reg   <= reg_rd2  ;
+            dmem_rd_reg   <= dmem_rd  ;
         end
     end
     assign _pc_W      = pc_W_reg     ;
@@ -68,7 +68,6 @@ module pipeline_reg_W(
     assign _imm20_e32 = imm20_e32_reg;
     assign _c3        = c3_reg       ;
     assign _reg_we    = reg_we_reg   ;
-    assign _reg_rd2   = reg_rd2_reg  ;
-    assign _reg_rd2   = reg_rd2_reg  ;
+    assign _dmem_rd   = dmem_rd_reg  ;
     
 endmodule
