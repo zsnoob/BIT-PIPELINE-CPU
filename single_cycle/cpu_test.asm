@@ -17,7 +17,7 @@ label1:
 	add a1, a0, a1
 	sw t4, (a1) 
 	lw t5, (a0)
-	beq t4, t5, label2
+	beq t4, t5, label2 #差分支预测错误检验
 	ori t6, zero, 0x2
 label2:
 	jal label2

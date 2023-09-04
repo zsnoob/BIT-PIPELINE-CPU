@@ -202,7 +202,7 @@ module mycpu(
         .c3(c3),
         .alu_op(alu_op),
         .branch(branch),
-        .dmem_we(dmem_we_D),
+        .dmem_we(dmem_we),
         .reg_we(reg_we)
     );
     
@@ -224,7 +224,7 @@ module mycpu(
         .clk(clk),
         .pc_E(pc_D),
         .alu_in1(alu_in1),
-        .alu_in2(aliu_in2),
+        .alu_in2(alu_in2),
         .flag(flag_D),
         .reg_wa(reg_wa_D),
         .alu_op(alu_op),
@@ -243,7 +243,7 @@ module mycpu(
         ._c3(c3_E),
         ._dmem_we(dmem_we_E),
         ._reg_we(reg_we_E),   
-        ._reg_rd2(reg_we_E)                 
+        ._reg_rd2(reg_rd2_E)                 
     );
 
     alu _alu(

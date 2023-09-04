@@ -62,7 +62,10 @@ module pipeline_reg_E(
     reg [31:0] reg_rd2_reg  ;
     
     always @(posedge clk or negedge rst) begin
-        if(!rst) pc_E_reg <= 32'h00000000;
+        if(!rst) begin
+            pc_E_reg <= 32'h00000000;
+            flag_reg  <= 32'b1;
+        end
         else begin
             pc_E_reg      <= pc_E     ;
             alu_in1_reg   <= alu_in1  ;
@@ -87,7 +90,6 @@ module pipeline_reg_E(
     assign _c3       = c3_reg       ;
     assign _dmem_we  = dmem_we_reg  ;
     assign _reg_we   = reg_we_reg   ;
-    assign _reg_rd2  = reg_rd2_reg  ;
     assign _reg_rd2  = reg_rd2_reg  ;
 
 endmodule
