@@ -93,3 +93,4 @@ module pipeline_reg_E(
     assign _reg_rd2  = reg_rd2_reg  ;
 
 endmodule
+

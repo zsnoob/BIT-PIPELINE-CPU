@@ -145,7 +145,7 @@ module mycpu(
     end
     endfunction
     
-    assign alu_in1_D = reg_rd1;
+    assign alu_in1 = reg_rd1;
     assign imm12_s = {instr[31:25], instr[11:7]};
     assign imm12_i = instr[31:20];
     assign imm12_e32 = c1 ? {{20{imm12_s_D[11]}}, imm12_s_D} : {{20{imm12_i_D[11]}}, imm12_i_D};
@@ -209,7 +209,7 @@ module mycpu(
     regfile _regfile(
         .clk(clk),
         .rst(rstn),
-        .reg_we(reg_we),
+        .reg_we(reg_we_W),
         .reg_ra1(reg_ra1_D),
         .reg_ra2(reg_ra2_D),
         .reg_wa(reg_wa_W),
@@ -266,7 +266,7 @@ module mycpu(
         .reg_rd2(reg_rd2_E),       
         ._pc_M(pc_M),
         ._alu_out(alu_out_M),
-        ._reg_wa(reg_wq_M),
+        ._reg_wa(reg_wa_M),
         ._imm20_e32(imm20_e32_M),
         ._c3(c3_M),
         ._dmem_we(dmem_we_M),
@@ -287,7 +287,7 @@ module mycpu(
         .dmem_rd(dmem_rd),       
         ._pc_W(pc_W),
         ._alu_out(alu_out_W),
-        ._reg_wa(reg_wq_W),
+        ._reg_wa(reg_wa_W),
         ._imm20_e32(imm20_e32_W),
         ._c3(c3_W),
         ._reg_we(reg_we_W),
