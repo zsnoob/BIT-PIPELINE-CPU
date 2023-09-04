@@ -27,9 +27,10 @@ label1:
 	add a1, a0, a1
 	nop
 	nop
-	lw t5, (a0)
+	#lw t5, (a0)
 	sw t4, (a1) 
+label3:
 	beq t4, t5, label2 #差分支预测错误检�?
 	ori t6, zero, 0x2
 label2:
-	jal label2
+	jal label3

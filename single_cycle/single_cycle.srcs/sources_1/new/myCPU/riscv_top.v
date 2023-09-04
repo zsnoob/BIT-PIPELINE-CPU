@@ -170,7 +170,7 @@ module mycpu(
     pipeline_reg_D _pipeline_reg_D(
         .rst(rstn),
         .clk(clk),
-        .nop(flag),
+        .nop(flag_E),
         .pc_D(select_pc_out),       
         .opcode(opcode),     
         .funct3(funct3),     
