@@ -58,7 +58,7 @@ module pipeline_reg_D(
     reg    [11:0]   imm12_i_reg  ;
     reg    [31:0]   imm20_e32_reg;
     
-    always @(posedge clk or negedge rst or negedge nop) begin
+    always @(posedge clk or negedge rst or negedge nop or posedge nop) begin
         if (!rst) pc_D_reg <= 32'h00000000;
         else if(!nop) begin
             //...

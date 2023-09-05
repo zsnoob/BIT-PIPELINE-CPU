@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="319420fs"></ZoomStartTime>
-      <ZoomEndTime time="401021fs"></ZoomEndTime>
-      <Cursor1Time time="387770fs"></Cursor1Time>
+      <ZoomStartTime time="409270fs"></ZoomStartTime>
+      <ZoomEndTime time="489371fs"></ZoomEndTime>
+      <Cursor1Time time="453070fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="155"></NameColumnWidth>
-      <ValueColumnWidth column_width="81"></ValueColumnWidth>
+      <NameColumnWidth column_width="154"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="47" />
+   <WVObjectSize size="50" />
    <wvobject fp_name="/testbench/rstn" type="logic">
       <obj_property name="ElementShortName">rstn</obj_property>
       <obj_property name="ObjectShortName">rstn</obj_property>
@@ -67,6 +67,14 @@
    <wvobject fp_name="/testbench/single_cycle0/mycpu0/_pipeline_reg_D/opcode_reg" type="array">
       <obj_property name="ElementShortName">opcode_reg[6:0]</obj_property>
       <obj_property name="ObjectShortName">opcode_reg[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/single_cycle0/mycpu0/_pipeline_reg_D/pc_D_reg" type="array">
+      <obj_property name="ElementShortName">pc_D_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_D_reg[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/single_cycle0/mycpu0/_pipeline_reg_D/opcode" type="array">
+      <obj_property name="ElementShortName">opcode[6:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode[6:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/testbench/single_cycle0/mycpu0/_cu/funct3" type="array">
       <obj_property name="ElementShortName">funct3[2:0]</obj_property>
@@ -201,6 +209,10 @@
    <wvobject fp_name="/testbench/single_cycle0/mycpu0/_regfile/regs[29]" type="array">
       <obj_property name="ElementShortName">[29][31:0]</obj_property>
       <obj_property name="ObjectShortName">[29][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/single_cycle0/mycpu0/_regfile/regs[7]" type="array">
+      <obj_property name="ElementShortName">[7][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[7][31:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/testbench/single_cycle0/mycpu0/_regfile/regs[30]" type="array">
       <obj_property name="ElementShortName">[30][31:0]</obj_property>
