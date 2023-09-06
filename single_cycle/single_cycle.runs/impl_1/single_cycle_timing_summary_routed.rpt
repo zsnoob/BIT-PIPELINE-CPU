@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Wed Sep  6 20:43:51 2023
-| Host         : DESKTOP8G70C2I running 64-bit major release  (build 9200)
+| Date         : Thu Sep  7 00:43:28 2023
+| Host         : Oldust running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file single_cycle_timing_summary_routed.rpt -pb single_cycle_timing_summary_routed.pb -rpx single_cycle_timing_summary_routed.rpx -warn_on_violation
 | Design       : single_cycle
 | Device       : 7a35t-csg324
@@ -54,7 +54,91 @@ Table of Contents
 
 1. checking no_clock
 --------------------
- There are 2200 register/latch pins with no clock driven by root clock pin: clk (HIGH)
+ There are 2326 register/latch pins with no clock driven by root clock pin: clk (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/cnt2_reg[0]/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/cnt2_reg[10]/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/cnt2_reg[11]/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/cnt2_reg[12]/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/cnt2_reg[13]/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/cnt2_reg[14]/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/cnt2_reg[15]/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/cnt2_reg[16]/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/cnt2_reg[17]/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/cnt2_reg[18]/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/cnt2_reg[19]/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/cnt2_reg[1]_rep__0/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/cnt2_reg[1]_rep__1/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/cnt2_reg[20]/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/cnt2_reg[21]/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/cnt2_reg[22]/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/cnt2_reg[23]/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/cnt2_reg[24]/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/cnt2_reg[25]/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/cnt2_reg[26]/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/cnt2_reg[27]/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/cnt2_reg[28]/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/cnt2_reg[29]/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/cnt2_reg[2]/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/cnt2_reg[30]/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/cnt2_reg[31]/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/cnt2_reg[3]/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/cnt2_reg[4]/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/cnt2_reg[5]/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/cnt2_reg[5]_rep/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/cnt2_reg[6]/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/cnt2_reg[7]/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/cnt2_reg[8]/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/cnt2_reg[9]/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/flag_reg[0]/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/flag_reg[1]/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/flag_reg[2]/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/flag_reg[3]/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/flag_reg[4]/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/flag_reg[5]/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/flag_reg[6]/Q (HIGH)
+
+ There are 25 register/latch pins with no clock driven by root clock pin: my_player/flag_reg[7]/Q (HIGH)
 
 
 2. checking constant_clock
@@ -69,7 +153,7 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 9520 pins that are not constrained for maximum delay. (HIGH)
+ There are 9865 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
@@ -83,7 +167,7 @@ Table of Contents
 
 6. checking no_output_delay
 ---------------------------
- There are 30 ports with no output delay specified. (HIGH)
+ There are 31 ports with no output delay specified. (HIGH)
 
  There are 0 ports with no output delay but user has a false path constraint
 

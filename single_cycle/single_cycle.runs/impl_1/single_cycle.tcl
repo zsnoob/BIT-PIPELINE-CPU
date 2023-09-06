@@ -65,18 +65,18 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 3
+  set_param chipscope.maxJobs 2
   create_project -in_memory -part xc7a35tcsg324-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir {C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.cache/wt} [current_project]
-  set_property parent.project_path {C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.xpr} [current_project]
+  set_property webtalk.parent_dir C:/Users/13614/Desktop/vivado_projects/BIT-PIPELINE-CPU/single_cycle/single_cycle.cache/wt [current_project]
+  set_property parent.project_path C:/Users/13614/Desktop/vivado_projects/BIT-PIPELINE-CPU/single_cycle/single_cycle.xpr [current_project]
   set_property ip_output_repo E:/ZZZ/lab3/single_cycle/single_cycle.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet {{C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.runs/synth_1/single_cycle.dcp}}
-  read_ip -quiet {{C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/ip/inst_rom/inst_rom.xci}}
-  read_ip -quiet {{C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/ip/data_ram/data_ram.xci}}
-  read_xdc {{C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/constrs_1/new/single_cycle.xdc}}
+  add_files -quiet C:/Users/13614/Desktop/vivado_projects/BIT-PIPELINE-CPU/single_cycle/single_cycle.runs/synth_1/single_cycle.dcp
+  read_ip -quiet C:/Users/13614/Desktop/vivado_projects/BIT-PIPELINE-CPU/single_cycle/single_cycle.srcs/sources_1/new/ip/inst_rom/inst_rom.xci
+  read_ip -quiet C:/Users/13614/Desktop/vivado_projects/BIT-PIPELINE-CPU/single_cycle/single_cycle.srcs/sources_1/new/ip/data_ram/data_ram.xci
+  read_xdc C:/Users/13614/Desktop/vivado_projects/BIT-PIPELINE-CPU/single_cycle/single_cycle.srcs/constrs_1/new/single_cycle.xdc
   link_design -top single_cycle -part xc7a35tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]
@@ -149,6 +149,24 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step route_design
+  unset ACTIVE_STEP 
+}
+
+start_step write_bitstream
+set ACTIVE_STEP write_bitstream
+set rc [catch {
+  create_msg_db write_bitstream.pb
+  catch { write_mem_info -force single_cycle.mmi }
+  write_bitstream -force single_cycle.bit 
+  catch {write_debug_probes -quiet -force single_cycle}
+  catch {file copy -force single_cycle.ltx debug_nets.ltx}
+  close_msg_db -file write_bitstream.pb
+} RESULT]
+if {$rc} {
+  step_failed write_bitstream
+  return -code error $RESULT
+} else {
+  end_step write_bitstream
   unset ACTIVE_STEP 
 }
 
