@@ -1,0 +1,128 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Wed Sep  6 20:43:28 2023
+| Host         : DESKTOP8G70C2I running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file single_cycle_control_sets_placed.rpt
+| Design       : single_cycle
+| Device       : xc7a35t
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    50 |
+|    Minimum number of control sets                        |    50 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    68 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    50 |
+| >= 0 to < 4        |     5 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    44 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               5 |            4 |
+| No           | No                    | Yes                    |             161 |           39 |
+| No           | Yes                   | No                     |             150 |           37 |
+| Yes          | No                    | No                     |             315 |           94 |
+| Yes          | No                    | Yes                    |             992 |          465 |
+| Yes          | Yes                   | No                     |              37 |           15 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-----------------------------------------------------------------------------------------------+-------------------------------+------------------+----------------+
+|  Clock Signal  |                                         Enable Signal                                         |        Set/Reset Signal       | Slice Load Count | Bel Load Count |
++----------------+-----------------------------------------------------------------------------------------------+-------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | confreg0/down_btn_key_sample                                                                  | mycpu0/_regfile/rstn          |                1 |              1 |
+|  clk_IBUF_BUFG | confreg0/left_btn_key_sample                                                                  | mycpu0/_regfile/rstn          |                1 |              1 |
+|  clk_IBUF_BUFG | confreg0/mid_btn_key_sample                                                                   | mycpu0/_regfile/rstn          |                1 |              1 |
+|  clk_IBUF_BUFG | confreg0/right_btn_key_sample                                                                 | mycpu0/_regfile/rstn          |                1 |              1 |
+|  clk_IBUF_BUFG | confreg0/up_btn_key_sample                                                                    | mycpu0/_regfile/rstn          |                1 |              1 |
+|  clk_IBUF_BUFG |                                                                                               |                               |                4 |              5 |
+|  clk_IBUF_BUFG | mycpu0/_pipeline_reg_M/alu_out_reg_reg[3]_0[0]                                                |                               |                5 |             16 |
+|  clk_IBUF_BUFG |                                                                                               | confreg0/down_btn_key_count0  |                5 |             20 |
+|  clk_IBUF_BUFG |                                                                                               | confreg0/left_btn_key_count0  |                5 |             20 |
+|  clk_IBUF_BUFG |                                                                                               | confreg0/mid_btn_key_count0   |                5 |             20 |
+|  clk_IBUF_BUFG |                                                                                               | confreg0/right_btn_key_count0 |                5 |             20 |
+|  clk_IBUF_BUFG |                                                                                               | confreg0/up_btn_key_count0    |                5 |             20 |
+|  clk_IBUF_BUFG | mycpu0/_pipeline_reg_W/reg_we_reg_reg_19[0]                                                   | mycpu0/_regfile/rstn          |               11 |             32 |
+|  clk_IBUF_BUFG | mycpu0/_pipeline_reg_W/reg_we_reg_reg_12[0]                                                   | mycpu0/_regfile/rstn          |               13 |             32 |
+|  clk_IBUF_BUFG | mycpu0/_pipeline_reg_W/reg_we_reg_reg_22[0]                                                   | mycpu0/_regfile/rstn          |               20 |             32 |
+|  clk_IBUF_BUFG | mycpu0/_pipeline_reg_W/reg_we_reg_reg_1[0]                                                    | mycpu0/_regfile/rstn          |               18 |             32 |
+|  clk_IBUF_BUFG | mycpu0/_pipeline_reg_W/reg_we_reg_reg_26[0]                                                   | mycpu0/_regfile/rstn          |               17 |             32 |
+|  clk_IBUF_BUFG | mycpu0/_pipeline_reg_M/E[0]                                                                   | mycpu0/_regfile/rstn          |               10 |             32 |
+|  clk_IBUF_BUFG | mycpu0/_pipeline_reg_W/E[0]                                                                   | mycpu0/_regfile/rstn          |               17 |             32 |
+|  clk_IBUF_BUFG | mycpu0/_pipeline_reg_W/reg_we_reg_reg_9[0]                                                    | mycpu0/_regfile/rstn          |               14 |             32 |
+|  clk_IBUF_BUFG | mycpu0/_pipeline_reg_W/reg_we_reg_reg_10[0]                                                   | mycpu0/_regfile/rstn          |               12 |             32 |
+|  clk_IBUF_BUFG | mycpu0/_pipeline_reg_W/reg_we_reg_reg_0[0]                                                    | mycpu0/_regfile/rstn          |               23 |             32 |
+|  clk_IBUF_BUFG | mycpu0/_pipeline_reg_W/reg_we_reg_reg_17[0]                                                   | mycpu0/_regfile/rstn          |               16 |             32 |
+|  clk_IBUF_BUFG | mycpu0/_pipeline_reg_W/reg_we_reg_reg_16[0]                                                   | mycpu0/_regfile/rstn          |               11 |             32 |
+|  clk_IBUF_BUFG | mycpu0/_pipeline_reg_W/reg_we_reg_reg_24[0]                                                   | mycpu0/_regfile/rstn          |               20 |             32 |
+|  clk_IBUF_BUFG | mycpu0/_pipeline_reg_W/reg_we_reg_reg_25[0]                                                   | mycpu0/_regfile/rstn          |               17 |             32 |
+|  clk_IBUF_BUFG | mycpu0/_pipeline_reg_W/reg_we_reg_reg_20[0]                                                   | mycpu0/_regfile/rstn          |               13 |             32 |
+|  clk_IBUF_BUFG | mycpu0/_pipeline_reg_W/reg_we_reg_reg_29[0]                                                   | mycpu0/_regfile/rstn          |               14 |             32 |
+|  clk_IBUF_BUFG | mycpu0/_pipeline_reg_W/reg_we_reg_reg_2[0]                                                    | mycpu0/_regfile/rstn          |               18 |             32 |
+|  clk_IBUF_BUFG | mycpu0/_pipeline_reg_W/reg_we_reg_reg_18[0]                                                   | mycpu0/_regfile/rstn          |               13 |             32 |
+|  clk_IBUF_BUFG | mycpu0/_pipeline_reg_W/reg_we_reg_reg_15[0]                                                   | mycpu0/_regfile/rstn          |               14 |             32 |
+|  clk_IBUF_BUFG | mycpu0/_pipeline_reg_W/reg_we_reg_reg_11[0]                                                   | mycpu0/_regfile/rstn          |               13 |             32 |
+|  clk_IBUF_BUFG | mycpu0/_pipeline_reg_W/reg_we_reg_reg_23[0]                                                   | mycpu0/_regfile/rstn          |               17 |             32 |
+|  clk_IBUF_BUFG | mycpu0/_pipeline_reg_W/reg_we_reg_reg_8[0]                                                    | mycpu0/_regfile/rstn          |               11 |             32 |
+|  clk_IBUF_BUFG | mycpu0/_pipeline_reg_W/reg_we_reg_reg_21[0]                                                   | mycpu0/_regfile/rstn          |               18 |             32 |
+|  clk_IBUF_BUFG | mycpu0/_pipeline_reg_W/reg_we_reg_reg_5[0]                                                    | mycpu0/_regfile/rstn          |               13 |             32 |
+|  clk_IBUF_BUFG | mycpu0/_pipeline_reg_W/reg_we_reg_reg_28[0]                                                   | mycpu0/_regfile/rstn          |               13 |             32 |
+|  clk_IBUF_BUFG | mycpu0/_pipeline_reg_W/reg_we_reg_reg_7[0]                                                    | mycpu0/_regfile/rstn          |               13 |             32 |
+|  clk_IBUF_BUFG | mycpu0/_pipeline_reg_W/reg_we_reg_reg_4[0]                                                    | mycpu0/_regfile/rstn          |               15 |             32 |
+|  clk_IBUF_BUFG | mycpu0/_pipeline_reg_W/reg_we_reg_reg_3[0]                                                    | mycpu0/_regfile/rstn          |               10 |             32 |
+|  clk_IBUF_BUFG | mycpu0/_pipeline_reg_W/reg_we_reg_reg_13[0]                                                   | mycpu0/_regfile/rstn          |               14 |             32 |
+|  clk_IBUF_BUFG | mycpu0/_pipeline_reg_W/reg_we_reg_reg_27[0]                                                   | mycpu0/_regfile/rstn          |               17 |             32 |
+|  clk_IBUF_BUFG | mycpu0/_pipeline_reg_W/reg_we_reg_reg_6[0]                                                    | mycpu0/_regfile/rstn          |               11 |             32 |
+|  clk_IBUF_BUFG | mycpu0/_pipeline_reg_W/reg_we_reg_reg_14[0]                                                   | mycpu0/_regfile/rstn          |               19 |             32 |
+|  clk_IBUF_BUFG | data_ram_4k/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_255_0_0_i_1_n_0    |                               |               32 |            128 |
+|  clk_IBUF_BUFG | data_ram_4k/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_256_511_0_0_i_1_n_0  |                               |               32 |            128 |
+|  clk_IBUF_BUFG | data_ram_4k/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_512_767_0_0_i_1_n_0  |                               |               32 |            128 |
+|  clk_IBUF_BUFG | data_ram_4k/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_768_1023_0_0_i_1_n_0 |                               |               32 |            128 |
+|  clk_IBUF_BUFG |                                                                                               | mycpu0/_regfile/rstn          |               51 |            211 |
+|  clk_IBUF_BUFG | rstn_IBUF                                                                                     |                               |               89 |            327 |
++----------------+-----------------------------------------------------------------------------------------------+-------------------------------+------------------+----------------+
+
+

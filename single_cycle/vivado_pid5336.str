@@ -1,0 +1,165 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:40:23 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 5336
+License: Customer
+
+Current time: 	Tue Sep 05 19:27:04 CST 2023
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Available disk space: 184 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	blessing software
+User home directory: C:/Users/blessing software
+User working directory: C:/Users/blessing software/Desktop/single_cycle/single_cycle
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.2
+RDI_DATADIR: C:/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: C:/Users/blessing software/AppData/Roaming/Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: C:/Users/blessing software/AppData/Roaming/Xilinx/Vivado/2019.2/
+Vivado layouts directory: C:/Users/blessing software/AppData/Roaming/Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/blessing software/Desktop/single_cycle/single_cycle/vivado.log
+Vivado journal file location: 	C:/Users/blessing software/Desktop/single_cycle/single_cycle/vivado.jou
+Engine tmp dir: 	C:/Users/blessing software/Desktop/single_cycle/single_cycle/.Xil/Vivado-5336-DESKTOP-8G70C2I
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 661 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bB (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\blessing software\Desktop\single_cycle\single_cycle\single_cycle.xpr. Version: Vivado v2019.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 67 MB (+68026kb) [00:00:12]
+// [Engine Memory]: 683 MB (+564681kb) [00:00:12]
+// [GUI Memory]: 90 MB (+20491kb) [00:00:12]
+// [GUI Memory]: 106 MB (+11991kb) [00:00:13]
+// WARNING: HEventQueue.dispatchEvent() is taking  2601 ms.
+// Tcl Message: open_project {C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 721 MB. GUI used memory: 57 MB. Current time: 9/5/23, 7:27:08 PM CST
+// [Engine Memory]: 723 MB (+5773kb) [00:00:14]
+// Tcl Message: open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 726.859 ; gain = 96.848 
+// Project name: single_cycle; location: C:/Users/blessing software/Desktop/single_cycle/single_cycle; part: xc7a35tcsg324-1
+dismissDialog("Open Project"); // bB (cr)
+// [GUI Memory]: 113 MB (+1658kb) [00:00:15]
+// [Engine Memory]: 766 MB (+7715kb) [00:00:17]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 10 seconds
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u (O, cr)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u (O, cr)
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs synth_1 -jobs 6 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Sep  5 19:27:35 2023] Launched data_ram_synth_1... Run output will be captured here: C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.runs/data_ram_synth_1/runme.log [Tue Sep  5 19:27:35 2023] Launched synth_1... Run output will be captured here: C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 785ms to process. Increasing delay to 3000 ms.
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 810ms to process. Increasing delay to 4000 ms.
+// aj (cr): Synthesis Failed: addNotify
+// Elapsed time: 73 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // aj (cr)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aL (aI, cr)
+// [GUI Memory]: 122 MB (+3031kb) [00:02:00]
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aL (aI, cr)
+// Elapsed time: 12 seconds
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, true); // g (aR, cr): TRUE
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u (O, cr)
+// A (cr): Elaborate Design: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1230 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 802 MB. GUI used memory: 66 MB. Current time: 9/5/23, 7:29:21 PM CST
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bB (cr):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A (cr)
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a35tcsg324-1 Top: single_cycle 
+// TclEventType: ELABORATE_START
+// WARNING: HEventQueue.dispatchEvent() is taking  1278 ms.

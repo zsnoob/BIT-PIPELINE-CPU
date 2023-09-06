@@ -1,8 +1,8 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-// Date        : Mon Sep  4 20:49:37 2023
-// Host        : DESKTOP-8G70C2I running 64-bit major release  (build 9200)
+// Date        : Wed Sep  6 19:54:46 2023
+// Host        : DESKTOP8G70C2I running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim {C:/Users/blessing
 //               software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/ip/inst_rom/inst_rom_sim_netlist.v}
 // Design      : inst_rom

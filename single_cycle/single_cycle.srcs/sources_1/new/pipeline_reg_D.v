@@ -49,6 +49,8 @@ module pipeline_reg_D(
     );
     reg    [31:0]   pc_D_reg     ;
     reg    [6:0]    opcode_reg   ;
+    reg    [31:0]   pc_D_nop     ;
+    reg    [6:0]    opcode_nop   ;
     reg    [2:0]    funct3_reg   ;
     reg    [6:0]    funct7_reg   ;
     reg    [4:0]    reg_ra1_reg  ;
@@ -58,12 +60,11 @@ module pipeline_reg_D(
     reg    [11:0]   imm12_i_reg  ;
     reg    [31:0]   imm20_e32_reg;
     
-    always @(posedge clk or negedge rst or negedge nop or posedge nop) begin
-        if (!rst) pc_D_reg <= 32'h00000000;
-        else if(!nop) begin
-            //...
-            pc_D_reg      <= 32'h00000000;
-            opcode_reg    <= 7'b0000000;
+    always @(posedge clk or negedge rst) begin
+        if (!rst) begin
+        pc_D_reg <= 32'h00000000;
+        pc_D_nop <=  32'h00000000;
+        opcode_nop <= 7'b0000000;
         end
         else begin
             pc_D_reg      <= pc_D     ;
@@ -78,10 +79,12 @@ module pipeline_reg_D(
             imm20_e32_reg <= imm20_e32;
         end
         //pc_reg <= pc_in;
+        end
         
-    end
-    assign _pc_D      = pc_D_reg     ;
-    assign _opcode    = opcode_reg   ;
+    
+    
+    assign _pc_D      = nop ? pc_D_reg : pc_D_nop  ;
+    assign _opcode    = nop ? opcode_reg : opcode_nop  ;
     assign _funct3    = funct3_reg   ;
     assign _funct7    = funct7_reg   ;
     assign _reg_ra1   = reg_ra1_reg  ;

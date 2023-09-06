@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Sep  6 17:46:08 2023
+# Process ID: 14280
+# Current directory: C:/Users/blessing software/Desktop/single_cycle/single_cycle
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13772 C:\Users\blessing software\Desktop\single_cycle\single_cycle\single_cycle.xpr
+# Log file: C:/Users/blessing software/Desktop/single_cycle/single_cycle/vivado.log
+# Journal file: C:/Users/blessing software/Desktop/single_cycle/single_cycle\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.xpr}
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Output Repository Path: Could not find the directory 'E:/ZZZ/lab3/single_cycle/single_cycle.cache/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:37 . Memory (MB): peak = 745.262 ; gain = 128.930
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Wed Sep  6 18:55:21 2023] Launched synth_1...
+Run output will be captured here: C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.runs/synth_1/runme.log
+reset_project
+reset_project
+reset_project
+run tcl script del.tcl
+ERROR: [Common 17-165] Too many positional options when parsing 'del.tcl', please type 'run_ml_model -help' for usage info.
+run tcl del.tcl
+ERROR: [Common 17-165] Too many positional options when parsing 'del.tcl', please type 'run_ml_model -help' for usage info.
+run del.tcl
+ERROR: [Common 17-165] Too many positional options when parsing 'del.tcl', please type 'run_ml_model -help' for usage info.
+source {C:/Users/blessing software/Desktop/single_cycle/single_cycle/del.tcl}
+# reset_project
+source {C:/Users/blessing software/Desktop/single_cycle/single_cycle/del.tcl}
+# reset_project
+reset_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Sep  6 19:21:15 2023...

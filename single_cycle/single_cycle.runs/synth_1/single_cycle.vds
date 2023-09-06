@@ -1,0 +1,661 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Sep  6 20:41:48 2023
+# Process ID: 18764
+# Current directory: C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.runs/synth_1
+# Command line: vivado.exe -log single_cycle.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source single_cycle.tcl
+# Log file: C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.runs/synth_1/single_cycle.vds
+# Journal file: C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source single_cycle.tcl -notrace
+Command: synth_design -top single_cycle -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11900 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 844.840 ; gain = 234.809
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'single_cycle' [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/single_cycle.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mycpu' [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/myCPU/riscv_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pc' [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/myCPU/pc.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pc' (1#1) [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/myCPU/pc.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pipeline_reg_D' [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pipeline_reg_D.v:23]
+WARNING: [Synth 8-5788] Register opcode_reg_reg in module pipeline_reg_D is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pipeline_reg_D.v:71]
+WARNING: [Synth 8-5788] Register funct3_reg_reg in module pipeline_reg_D is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pipeline_reg_D.v:72]
+WARNING: [Synth 8-5788] Register funct7_reg_reg in module pipeline_reg_D is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pipeline_reg_D.v:73]
+WARNING: [Synth 8-5788] Register reg_ra1_reg_reg in module pipeline_reg_D is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pipeline_reg_D.v:74]
+WARNING: [Synth 8-5788] Register reg_ra2_reg_reg in module pipeline_reg_D is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pipeline_reg_D.v:75]
+WARNING: [Synth 8-5788] Register reg_wa_reg_reg in module pipeline_reg_D is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pipeline_reg_D.v:76]
+WARNING: [Synth 8-5788] Register imm12_s_reg_reg in module pipeline_reg_D is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pipeline_reg_D.v:77]
+WARNING: [Synth 8-5788] Register imm12_i_reg_reg in module pipeline_reg_D is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pipeline_reg_D.v:78]
+WARNING: [Synth 8-5788] Register imm20_e32_reg_reg in module pipeline_reg_D is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pipeline_reg_D.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'pipeline_reg_D' (2#1) [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pipeline_reg_D.v:23]
+INFO: [Synth 8-6157] synthesizing module 'control' [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/myCPU/control.v:24]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000000010000 is unreachable [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/myCPU/control.v:105]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000000010000 is unreachable [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/myCPU/control.v:137]
+INFO: [Synth 8-6155] done synthesizing module 'control' (3#1) [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/myCPU/control.v:24]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/myCPU/regfile.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (4#1) [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/myCPU/regfile.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pipeline_reg_E' [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pipeline_reg_E.v:23]
+WARNING: [Synth 8-5788] Register alu_in1_reg_reg in module pipeline_reg_E is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pipeline_reg_E.v:71]
+WARNING: [Synth 8-5788] Register alu_in2_reg_reg in module pipeline_reg_E is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pipeline_reg_E.v:72]
+WARNING: [Synth 8-5788] Register reg_wa_reg_reg in module pipeline_reg_E is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pipeline_reg_E.v:74]
+WARNING: [Synth 8-5788] Register alu_op_reg_reg in module pipeline_reg_E is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pipeline_reg_E.v:75]
+WARNING: [Synth 8-5788] Register imm20_e32_reg_reg in module pipeline_reg_E is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pipeline_reg_E.v:76]
+WARNING: [Synth 8-5788] Register c3_reg_reg in module pipeline_reg_E is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pipeline_reg_E.v:77]
+WARNING: [Synth 8-5788] Register dmem_we_reg_reg in module pipeline_reg_E is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pipeline_reg_E.v:78]
+WARNING: [Synth 8-5788] Register reg_we_reg_reg in module pipeline_reg_E is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pipeline_reg_E.v:79]
+WARNING: [Synth 8-5788] Register reg_rd2_reg_reg in module pipeline_reg_E is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pipeline_reg_E.v:80]
+INFO: [Synth 8-6155] done synthesizing module 'pipeline_reg_E' (5#1) [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pipeline_reg_E.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/myCPU/alu.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (6#1) [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/myCPU/alu.v:24]
+INFO: [Synth 8-6157] synthesizing module 'pipeline_reg_M' [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pipeline_reg_M.v:23]
+WARNING: [Synth 8-5788] Register alu_out_reg_reg in module pipeline_reg_M is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pipeline_reg_M.v:60]
+WARNING: [Synth 8-5788] Register reg_wa_reg_reg in module pipeline_reg_M is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pipeline_reg_M.v:61]
+WARNING: [Synth 8-5788] Register imm20_e32_reg_reg in module pipeline_reg_M is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pipeline_reg_M.v:62]
+WARNING: [Synth 8-5788] Register c3_reg_reg in module pipeline_reg_M is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pipeline_reg_M.v:63]
+WARNING: [Synth 8-5788] Register dmem_we_reg_reg in module pipeline_reg_M is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pipeline_reg_M.v:64]
+WARNING: [Synth 8-5788] Register reg_we_reg_reg in module pipeline_reg_M is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pipeline_reg_M.v:65]
+WARNING: [Synth 8-5788] Register reg_rd2_reg_reg in module pipeline_reg_M is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pipeline_reg_M.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'pipeline_reg_M' (7#1) [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pipeline_reg_M.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pipeline_reg_W' [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pipeline_reg_W.v:23]
+WARNING: [Synth 8-5788] Register alu_out_reg_reg in module pipeline_reg_W is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pipeline_reg_W.v:57]
+WARNING: [Synth 8-5788] Register reg_wa_reg_reg in module pipeline_reg_W is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pipeline_reg_W.v:58]
+WARNING: [Synth 8-5788] Register imm20_e32_reg_reg in module pipeline_reg_W is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pipeline_reg_W.v:59]
+WARNING: [Synth 8-5788] Register c3_reg_reg in module pipeline_reg_W is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pipeline_reg_W.v:60]
+WARNING: [Synth 8-5788] Register reg_we_reg_reg in module pipeline_reg_W is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pipeline_reg_W.v:61]
+WARNING: [Synth 8-5788] Register dmem_rd_reg_reg in module pipeline_reg_W is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pipeline_reg_W.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'pipeline_reg_W' (8#1) [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pipeline_reg_W.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pred_pc' [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pred_pc.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pred_pc' (9#1) [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/pred_pc.v:23]
+INFO: [Synth 8-6157] synthesizing module 'flag_gen' [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/flag_gen.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'flag_gen' (10#1) [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/flag_gen.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mycpu' (11#1) [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/myCPU/riscv_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'inst_rom' [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.runs/synth_1/.Xil/Vivado-18764-DESKTOP8G70C2I/realtime/inst_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'inst_rom' (12#1) [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.runs/synth_1/.Xil/Vivado-18764-DESKTOP8G70C2I/realtime/inst_rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'data_ram' [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.runs/synth_1/.Xil/Vivado-18764-DESKTOP8G70C2I/realtime/data_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'data_ram' (13#1) [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.runs/synth_1/.Xil/Vivado-18764-DESKTOP8G70C2I/realtime/data_ram_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'confreg' [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/confreg/confreg.v:14]
+INFO: [Synth 8-226] default block is never used [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/confreg/confreg.v:282]
+INFO: [Synth 8-226] default block is never used [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/confreg/confreg.v:313]
+INFO: [Synth 8-226] default block is never used [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/confreg/confreg.v:333]
+INFO: [Synth 8-6155] done synthesizing module 'confreg' (14#1) [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/confreg/confreg.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'single_cycle' (15#1) [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/single_cycle.v:3]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[31]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[30]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[29]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[28]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[27]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[26]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[25]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[24]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[23]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[22]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[21]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[20]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[19]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[18]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[17]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[16]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 918.754 ; gain = 308.723
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 918.754 ; gain = 308.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 918.754 ; gain = 308.723
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 918.754 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/ip/inst_rom/inst_rom/inst_rom_in_context.xdc] for cell 'inst_rom_4k'
+Finished Parsing XDC File [c:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/ip/inst_rom/inst_rom/inst_rom_in_context.xdc] for cell 'inst_rom_4k'
+Parsing XDC File [c:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/ip/data_ram/data_ram/data_ram_in_context.xdc] for cell 'data_ram_4k'
+Finished Parsing XDC File [c:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/ip/data_ram/data_ram/data_ram_in_context.xdc] for cell 'data_ram_4k'
+Parsing XDC File [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/constrs_1/new/single_cycle.xdc]
+Finished Parsing XDC File [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/constrs_1/new/single_cycle.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/constrs_1/new/single_cycle.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/single_cycle_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/single_cycle_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1019.855 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1019.855 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1019.855 ; gain = 409.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1019.855 ; gain = 409.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst_rom_4k. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for data_ram_4k. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1019.855 ; gain = 409.824
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "get_inst_id" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "get_c3" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "get_alu_op" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "get_branch" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1019.855 ; gain = 409.824
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 49    
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 5     
+	                5 Bit    Registers := 7     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	  33 Input     32 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 3     
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 39    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module single_cycle 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module pc 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module pipeline_reg_D 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	               12 Bit    Registers := 2     
+	                7 Bit    Registers := 3     
+	                5 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+Module control 
+Detailed RTL Component Info : 
++---Muxes : 
+	   6 Input      5 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module regfile 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	  33 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 32    
+Module pipeline_reg_E 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+Module pipeline_reg_M 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module pipeline_reg_W 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module pred_pc 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+Module mycpu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 1     
+Module confreg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/imm20_e32_reg_reg[16]' (FDE) to 'mycpu0/_pipeline_reg_D/reg_ra1_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/imm20_e32_reg_reg[17]' (FDE) to 'mycpu0/_pipeline_reg_D/reg_ra1_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/imm20_e32_reg_reg[18]' (FDE) to 'mycpu0/_pipeline_reg_D/reg_ra1_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/imm20_e32_reg_reg[19]' (FDE) to 'mycpu0/_pipeline_reg_D/reg_ra1_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/imm20_e32_reg_reg[20]' (FDE) to 'mycpu0/_pipeline_reg_D/imm12_i_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/imm20_e32_reg_reg[21]' (FDE) to 'mycpu0/_pipeline_reg_D/imm12_i_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/imm20_e32_reg_reg[22]' (FDE) to 'mycpu0/_pipeline_reg_D/imm12_i_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/imm20_e32_reg_reg[23]' (FDE) to 'mycpu0/_pipeline_reg_D/imm12_i_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/imm20_e32_reg_reg[24]' (FDE) to 'mycpu0/_pipeline_reg_D/imm12_i_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/imm20_e32_reg_reg[25]' (FDE) to 'mycpu0/_pipeline_reg_D/imm12_i_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/imm20_e32_reg_reg[26]' (FDE) to 'mycpu0/_pipeline_reg_D/imm12_i_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/imm20_e32_reg_reg[27]' (FDE) to 'mycpu0/_pipeline_reg_D/imm12_i_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/imm20_e32_reg_reg[28]' (FDE) to 'mycpu0/_pipeline_reg_D/imm12_i_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/imm20_e32_reg_reg[29]' (FDE) to 'mycpu0/_pipeline_reg_D/imm12_i_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/imm20_e32_reg_reg[30]' (FDE) to 'mycpu0/_pipeline_reg_D/imm12_i_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/imm20_e32_reg_reg[31]' (FDE) to 'mycpu0/_pipeline_reg_D/imm12_i_reg_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/pc_D_nop_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/pc_D_nop_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/pc_D_nop_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/pc_D_nop_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/pc_D_nop_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/pc_D_nop_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/pc_D_nop_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/pc_D_nop_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/pc_D_nop_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/pc_D_nop_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/pc_D_nop_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/pc_D_nop_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/pc_D_nop_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/pc_D_nop_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/pc_D_nop_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/pc_D_nop_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/imm20_e32_reg_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/imm20_e32_reg_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/imm20_e32_reg_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/imm20_e32_reg_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/imm20_e32_reg_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/imm20_e32_reg_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/imm20_e32_reg_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/imm20_e32_reg_reg[11] )
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/imm20_e32_reg_reg[12]' (FDE) to 'mycpu0/_pipeline_reg_D/funct3_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/imm20_e32_reg_reg[13]' (FDE) to 'mycpu0/_pipeline_reg_D/funct3_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/imm20_e32_reg_reg[14]' (FDE) to 'mycpu0/_pipeline_reg_D/funct3_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/imm20_e32_reg_reg[15]' (FDE) to 'mycpu0/_pipeline_reg_D/reg_ra1_reg_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/pc_D_nop_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/pc_D_nop_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/pc_D_nop_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/pc_D_nop_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/imm20_e32_reg_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/pc_D_nop_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/imm20_e32_reg_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/imm20_e32_reg_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/imm20_e32_reg_reg[3] )
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/reg_wa_reg_reg[4]' (FDE) to 'mycpu0/_pipeline_reg_D/imm12_s_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/reg_wa_reg_reg[3]' (FDE) to 'mycpu0/_pipeline_reg_D/imm12_s_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/reg_wa_reg_reg[0]' (FDE) to 'mycpu0/_pipeline_reg_D/imm12_s_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/reg_wa_reg_reg[2]' (FDE) to 'mycpu0/_pipeline_reg_D/imm12_s_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/reg_wa_reg_reg[1]' (FDE) to 'mycpu0/_pipeline_reg_D/imm12_s_reg_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/pc_D_nop_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/pc_D_nop_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/pc_D_nop_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/pc_D_nop_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/pc_D_nop_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/pc_D_nop_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/pc_D_nop_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/pc_D_nop_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/pc_D_nop_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/pc_D_nop_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/pc_D_nop_reg[11] )
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/imm12_i_reg_reg[4]' (FDE) to 'mycpu0/_pipeline_reg_D/reg_ra2_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/imm12_s_reg_reg[5]' (FDE) to 'mycpu0/_pipeline_reg_D/imm12_i_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/imm12_i_reg_reg[5]' (FDE) to 'mycpu0/_pipeline_reg_D/funct7_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/imm12_s_reg_reg[6]' (FDE) to 'mycpu0/_pipeline_reg_D/imm12_i_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/imm12_i_reg_reg[6]' (FDE) to 'mycpu0/_pipeline_reg_D/funct7_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/imm12_s_reg_reg[7]' (FDE) to 'mycpu0/_pipeline_reg_D/imm12_i_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/imm12_i_reg_reg[7]' (FDE) to 'mycpu0/_pipeline_reg_D/funct7_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/imm12_s_reg_reg[8]' (FDE) to 'mycpu0/_pipeline_reg_D/imm12_i_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/imm12_i_reg_reg[8]' (FDE) to 'mycpu0/_pipeline_reg_D/funct7_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/imm12_s_reg_reg[9]' (FDE) to 'mycpu0/_pipeline_reg_D/imm12_i_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/imm12_i_reg_reg[9]' (FDE) to 'mycpu0/_pipeline_reg_D/funct7_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/imm12_s_reg_reg[10]' (FDE) to 'mycpu0/_pipeline_reg_D/imm12_i_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/imm12_i_reg_reg[10]' (FDE) to 'mycpu0/_pipeline_reg_D/funct7_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/imm12_s_reg_reg[11]' (FDE) to 'mycpu0/_pipeline_reg_D/imm12_i_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/imm12_i_reg_reg[11]' (FDE) to 'mycpu0/_pipeline_reg_D/funct7_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/imm12_i_reg_reg[0]' (FDE) to 'mycpu0/_pipeline_reg_D/reg_ra2_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/imm12_i_reg_reg[1]' (FDE) to 'mycpu0/_pipeline_reg_D/reg_ra2_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/imm12_i_reg_reg[2]' (FDE) to 'mycpu0/_pipeline_reg_D/reg_ra2_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/_pipeline_reg_D/reg_ra2_reg_reg[3]' (FDE) to 'mycpu0/_pipeline_reg_D/imm12_i_reg_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/opcode_nop_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/opcode_nop_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/opcode_nop_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/opcode_nop_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/opcode_nop_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/opcode_nop_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_D/opcode_nop_reg[4] )
+INFO: [Synth 8-3886] merging instance 'confreg0/scan_enable_reg[0]' (FDR) to 'confreg0/scan_enable_reg[4]'
+INFO: [Synth 8-3886] merging instance 'confreg0/scan_enable_reg[1]' (FDR) to 'confreg0/scan_enable_reg[5]'
+INFO: [Synth 8-3886] merging instance 'confreg0/scan_enable_reg[2]' (FDR) to 'confreg0/scan_enable_reg[6]'
+INFO: [Synth 8-3886] merging instance 'confreg0/scan_enable_reg[3]' (FDR) to 'confreg0/scan_enable_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_E/imm20_e32_reg_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_E/imm20_e32_reg_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_E/imm20_e32_reg_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_E/imm20_e32_reg_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_E/imm20_e32_reg_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_E/imm20_e32_reg_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_E/imm20_e32_reg_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_E/imm20_e32_reg_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_E/imm20_e32_reg_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_E/imm20_e32_reg_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_E/imm20_e32_reg_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_E/imm20_e32_reg_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_M/imm20_e32_reg_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_M/imm20_e32_reg_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_M/imm20_e32_reg_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_M/imm20_e32_reg_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_M/imm20_e32_reg_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_M/imm20_e32_reg_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_M/imm20_e32_reg_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_M/imm20_e32_reg_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_M/imm20_e32_reg_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_M/imm20_e32_reg_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_M/imm20_e32_reg_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_M/imm20_e32_reg_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_W/imm20_e32_reg_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_W/imm20_e32_reg_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_W/imm20_e32_reg_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_W/imm20_e32_reg_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_W/imm20_e32_reg_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_W/imm20_e32_reg_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_W/imm20_e32_reg_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_W/imm20_e32_reg_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_W/imm20_e32_reg_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_W/imm20_e32_reg_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_W/imm20_e32_reg_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/_pipeline_reg_W/imm20_e32_reg_reg[3] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 1055.848 ; gain = 445.816
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 1055.848 ; gain = 445.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 1055.848 ; gain = 445.816
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 1055.848 ; gain = 445.816
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1055.848 ; gain = 445.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1055.848 ; gain = 445.816
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1055.848 ; gain = 445.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1055.848 ; gain = 445.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1055.848 ; gain = 445.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1055.848 ; gain = 445.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-------------+----------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name  | RTL Name                                     | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-------------+----------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|single_cycle | mycpu0/_pipeline_reg_W/reg_wa_reg_reg[4]     | 3      | 5     | NO           | NO                 | YES               | 5      | 0       | 
+|single_cycle | mycpu0/_pipeline_reg_W/imm20_e32_reg_reg[31] | 3      | 20    | NO           | NO                 | YES               | 20     | 0       | 
+|single_cycle | mycpu0/_pipeline_reg_W/c3_reg_reg[1]         | 3      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|single_cycle | mycpu0/_pipeline_reg_W/reg_we_reg_reg        | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++-------------+----------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |inst_rom      |         1|
+|2     |data_ram      |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |data_ram |     1|
+|2     |inst_rom |     1|
+|3     |BUFG     |     1|
+|4     |CARRY4   |    80|
+|5     |LUT1     |     9|
+|6     |LUT2     |   116|
+|7     |LUT3     |    72|
+|8     |LUT4     |    90|
+|9     |LUT5     |   106|
+|10    |LUT6     |   726|
+|11    |MUXF7    |   256|
+|12    |SRL16E   |    28|
+|13    |FDCE     |  1152|
+|14    |FDPE     |     1|
+|15    |FDRE     |   495|
+|16    |IBUF     |    15|
+|17    |OBUF     |    30|
++------+---------+------+
+
+Report Instance Areas: 
++------+--------------------+---------------+------+
+|      |Instance            |Module         |Cells |
++------+--------------------+---------------+------+
+|1     |top                 |               |  3241|
+|2     |  confreg0          |confreg        |   277|
+|3     |  mycpu0            |mycpu          |  2854|
+|4     |    _flag_gen       |flag_gen       |     4|
+|5     |    _alu            |alu            |    17|
+|6     |    _pc             |pc             |    69|
+|7     |    _pipeline_reg_D |pipeline_reg_D |   164|
+|8     |    _pipeline_reg_E |pipeline_reg_E |   300|
+|9     |    _pipeline_reg_M |pipeline_reg_M |   180|
+|10    |    _pipeline_reg_W |pipeline_reg_W |   156|
+|11    |    _pred_pc        |pred_pc        |    30|
+|12    |    _regfile        |regfile        |  1886|
++------+--------------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1055.848 ; gain = 445.816
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:41 ; elapsed = 00:00:48 . Memory (MB): peak = 1055.848 ; gain = 344.715
+Synthesis Optimization Complete : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1055.848 ; gain = 445.816
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1055.848 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 336 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1055.848 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+184 Infos, 49 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 1055.848 ; gain = 718.773
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1055.848 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.runs/synth_1/single_cycle.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file single_cycle_utilization_synth.rpt -pb single_cycle_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Sep  6 20:42:47 2023...

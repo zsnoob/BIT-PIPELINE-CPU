@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Sep  5 19:43:52 2023
+# Process ID: 17932
+# Current directory: C:/Users/blessing software/Desktop/single_cycle/single_cycle
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14076 C:\Users\blessing software\Desktop\single_cycle\single_cycle\single_cycle.xpr
+# Log file: C:/Users/blessing software/Desktop/single_cycle/single_cycle/vivado.log
+# Journal file: C:/Users/blessing software/Desktop/single_cycle/single_cycle\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.xpr}
+update_compile_order -fileset sources_1
+set_param general.maxThreads 1
+reset_run synth_1
+synth_design -rtl -name rtl_1

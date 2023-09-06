@@ -89,7 +89,7 @@ module mycpu(
     wire [31:0] alu_in1_E;
     wire [31:0] alu_in2_E;
     wire flag_E;
-    wire [31:0] reg_wa_E;
+    wire [4:0] reg_wa_E;
     wire [4:0] alu_op_E; 
     wire [31:0] imm20_e32_E;
     wire [1:0] c3_E;

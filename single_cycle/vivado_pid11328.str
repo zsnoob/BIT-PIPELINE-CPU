@@ -1,0 +1,124 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:40:23 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 11328
+License: Customer
+
+Current time: 	Tue Sep 05 21:17:14 CST 2023
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Available disk space: 184 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	blessing software
+User home directory: C:/Users/blessing software
+User working directory: C:/Users/blessing software/Desktop/single_cycle/single_cycle
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.2
+RDI_DATADIR: C:/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: C:/Users/blessing software/AppData/Roaming/Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: C:/Users/blessing software/AppData/Roaming/Xilinx/Vivado/2019.2/
+Vivado layouts directory: C:/Users/blessing software/AppData/Roaming/Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/blessing software/Desktop/single_cycle/single_cycle/vivado.log
+Vivado journal file location: 	C:/Users/blessing software/Desktop/single_cycle/single_cycle/vivado.jou
+Engine tmp dir: 	C:/Users/blessing software/Desktop/single_cycle/single_cycle/.Xil/Vivado-11328-DESKTOP8G70C2I
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 581 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bB (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\blessing software\Desktop\single_cycle\single_cycle\single_cycle.xpr. Version: Vivado v2019.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.xpr} 
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 767ms to process. Increasing delay to 4000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 594 MB. GUI used memory: 53 MB. Current time: 9/5/23, 9:17:16 PM CST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 68 MB (+68990kb) [00:00:57]
+// [Engine Memory]: 666 MB (+546830kb) [00:00:57]
+// [GUI Memory]: 92 MB (+21044kb) [00:00:57]
+// [GUI Memory]: 112 MB (+16139kb) [00:00:58]
+// WARNING: HEventQueue.dispatchEvent() is taking  4482 ms.
+// Tcl Message: open_project {C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 722 MB. GUI used memory: 57 MB. Current time: 9/5/23, 9:17:44 PM CST
+// [Engine Memory]: 722 MB (+23815kb) [00:01:00]
+// Tcl Message: open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:31 . Memory (MB): peak = 744.340 ; gain = 135.566 
+// Project name: single_cycle; location: C:/Users/blessing software/Desktop/single_cycle/single_cycle; part: xc7a35tcsg324-1
+dismissDialog("Open Project"); // bB (cr)
+// WARNING: HEventQueue.dispatchEvent() is taking  1242 ms.
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 724 MB. GUI used memory: 56 MB. Current time: 9/5/23, 9:47:46 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 724 MB. GUI used memory: 51 MB. Current time: 9/5/23, 10:17:46 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 724 MB. GUI used memory: 51 MB. Current time: 9/5/23, 10:47:46 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 724 MB. GUI used memory: 51 MB. Current time: 9/5/23, 11:17:47 PM CST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 4697 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 4213 ms. Increasing delay to 12639 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 12 ms. Decreasing delay to 2012 ms.
