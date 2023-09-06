@@ -3,12 +3,12 @@
 module single_cycle(
     input   wire    rstn,
     input   wire    clk,
-
     /********* confreg *********/
     output  wire[6:0]   digital_num0,
     output  wire[6:0]   digital_num1,
     output  wire[7:0]   digital_cs,
     output  wire[7:0]   led,
+    output buzzer,
     input   wire[7:0]   switch,
     input   wire        mid_btn_key,
     input   wire        left_btn_key,
@@ -23,7 +23,9 @@ module single_cycle(
     wire[31:0]  data_ram_wdata;
     wire        data_ram_wen;
     wire[31:0]  data_ram_rdata;
-
+    
+    
+    
     mycpu mycpu0(
         .rstn(rstn),                                  // input
         .clk(clk),                                  // input
@@ -35,6 +37,13 @@ module single_cycle(
         .data_ram_wdata(data_ram_wdata),            // output
         .data_ram_wen(data_ram_wen),                // output
         .data_ram_rdata(data_ram_rdata)             // input
+    );
+    
+    player my_player(
+        .clk(clk),
+        .rst_n(rstn),
+        .buzzer(buzzer),
+        .song(switch)
     );
 
     inst_rom inst_rom_4k(

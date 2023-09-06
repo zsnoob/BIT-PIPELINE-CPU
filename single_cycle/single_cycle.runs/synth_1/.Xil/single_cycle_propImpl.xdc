@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:{C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.srcs/constrs_1/new/single_cycle.xdc} rfile:../../../single_cycle.srcs/constrs_1/new/single_cycle.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/13614/Desktop/vivado_projects/BIT-PIPELINE-CPU/single_cycle/single_cycle.srcs/constrs_1/new/single_cycle.xdc rfile:../../../single_cycle.srcs/constrs_1/new/single_cycle.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:9 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN G6 [get_ports {digital_cs[7]}]
 set_property src_info {type:XDC file:1 line:10 export:INPUT save:INPUT read:READ} [current_design]
@@ -89,3 +89,5 @@ set_property src_info {type:XDC file:1 line:92 export:INPUT save:INPUT read:READ
 set_property PACKAGE_PIN R15 [get_ports mid_btn_key]
 set_property src_info {type:XDC file:1 line:93 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN R17 [get_ports up_btn_key]
+set_property src_info {type:XDC file:1 line:95 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN G13 [get_ports buzzer]

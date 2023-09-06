@@ -2,11 +2,11 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Wed Sep  6 19:53:58 2023
-# Process ID: 964
-# Current directory: C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.runs/inst_rom_synth_1
+# Start of session at: Thu Sep  7 00:40:35 2023
+# Process ID: 8000
+# Current directory: C:/Users/13614/Desktop/vivado_projects/BIT-PIPELINE-CPU/single_cycle/single_cycle.runs/inst_rom_synth_1
 # Command line: vivado.exe -log inst_rom.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source inst_rom.tcl
-# Log file: C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.runs/inst_rom_synth_1/inst_rom.vds
-# Journal file: C:/Users/blessing software/Desktop/single_cycle/single_cycle/single_cycle.runs/inst_rom_synth_1\vivado.jou
+# Log file: C:/Users/13614/Desktop/vivado_projects/BIT-PIPELINE-CPU/single_cycle/single_cycle.runs/inst_rom_synth_1/inst_rom.vds
+# Journal file: C:/Users/13614/Desktop/vivado_projects/BIT-PIPELINE-CPU/single_cycle/single_cycle.runs/inst_rom_synth_1\vivado.jou
 #-----------------------------------------------------------
 source inst_rom.tcl -notrace

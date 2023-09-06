@@ -91,3 +91,6 @@ set_property PACKAGE_PIN V1 [get_ports left_btn_key]
 set_property PACKAGE_PIN U4 [get_ports down_btn_key]
 set_property PACKAGE_PIN R15 [get_ports mid_btn_key]
 set_property PACKAGE_PIN R17 [get_ports up_btn_key]
+
+set_property PACKAGE_PIN G13 [get_ports buzzer]
+set_property IOSTANDARD LVCMOS33 [get_ports buzzer]

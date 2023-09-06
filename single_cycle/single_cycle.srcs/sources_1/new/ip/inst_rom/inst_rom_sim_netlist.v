@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-// Date        : Wed Sep  6 19:54:46 2023
-// Host        : DESKTOP8G70C2I running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim {C:/Users/blessing
-//               software/Desktop/single_cycle/single_cycle/single_cycle.srcs/sources_1/new/ip/inst_rom/inst_rom_sim_netlist.v}
+// Date        : Thu Sep  7 00:41:08 2023
+// Host        : Oldust running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode funcsim
+//               C:/Users/13614/Desktop/vivado_projects/BIT-PIPELINE-CPU/single_cycle/single_cycle.srcs/sources_1/new/ip/inst_rom/inst_rom_sim_netlist.v
 // Design      : inst_rom
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.

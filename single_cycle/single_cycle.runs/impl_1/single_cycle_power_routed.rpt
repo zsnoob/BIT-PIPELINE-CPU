@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Wed Sep  6 20:43:51 2023
-| Host             : DESKTOP8G70C2I running 64-bit major release  (build 9200)
+| Date             : Thu Sep  7 00:43:28 2023
+| Host             : Oldust running 64-bit major release  (build 9200)
 | Command          : report_power -file single_cycle_power_routed.rpt -pb single_cycle_power_summary_routed.pb -rpx single_cycle_power_routed.rpx
 | Design           : single_cycle
 | Device           : xc7a35tcsg324-1
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 8.253        |
+| Total On-Chip Power (W)  | 8.961        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 8.140        |
-| Device Static (W)        | 0.113        |
+| Dynamic (W)              | 8.841        |
+| Device Static (W)        | 0.121        |
 | Effective TJA (C/W)      | 4.8          |
-| Max Ambient (C)          | 45.6         |
-| Junction Temperature (C) | 64.4         |
+| Max Ambient (C)          | 42.2         |
+| Junction Temperature (C) | 67.8         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,19 +52,19 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Slice Logic              |     1.008 |     4118 |       --- |             --- |
-|   LUT as Logic           |     0.749 |     1094 |     20800 |            5.26 |
-|   CARRY4                 |     0.146 |       80 |      8150 |            0.98 |
-|   Register               |     0.102 |     1660 |     41600 |            3.99 |
+| Slice Logic              |     1.337 |     5253 |       --- |             --- |
+|   LUT as Logic           |     1.063 |     1836 |     20800 |            8.83 |
+|   CARRY4                 |     0.153 |      128 |      8150 |            1.57 |
+|   Register               |     0.109 |     1811 |     41600 |            4.35 |
 |   BUFG                   |     0.006 |        1 |        32 |            3.13 |
 |   LUT as Shift Register  |     0.005 |       18 |      9600 |            0.19 |
 |   LUT as Distributed RAM |     0.002 |      512 |      9600 |            5.33 |
-|   F7/F8 Muxes            |    <0.001 |      640 |     32600 |            1.96 |
-|   Others                 |     0.000 |       18 |       --- |             --- |
-| Signals                  |     1.607 |     2589 |       --- |             --- |
-| I/O                      |     5.525 |       45 |       210 |           21.43 |
-| Static Power             |     0.113 |          |           |                 |
-| Total                    |     8.253 |          |           |                 |
+|   F7/F8 Muxes            |    <0.001 |      674 |     32600 |            2.07 |
+|   Others                 |     0.000 |       21 |       --- |             --- |
+| Signals                  |     1.977 |     3569 |       --- |             --- |
+| I/O                      |     5.526 |       46 |       210 |           21.90 |
+| Static Power             |     0.121 |          |           |                 |
+| Total                    |     8.961 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,8 +74,8 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     2.715 |       2.671 |      0.044 |
-| Vccaux    |       1.800 |     0.217 |       0.200 |      0.016 |
+| Vccint    |       1.000 |     3.421 |       3.371 |      0.050 |
+| Vccaux    |       1.800 |     0.217 |       0.200 |      0.017 |
 | Vcco33    |       3.300 |     1.549 |       1.548 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
@@ -141,23 +141,24 @@ Table of Contents
 +-----------------------------------+-----------+
 | Name                              | Power (W) |
 +-----------------------------------+-----------+
-| single_cycle                      |     8.140 |
-|   confreg0                        |     0.184 |
+| single_cycle                      |     8.841 |
+|   confreg0                        |     0.197 |
 |   data_ram_4k                     |     0.002 |
 |     U0                            |     0.002 |
 |       synth_options.dist_mem_inst |     0.002 |
-|   inst_rom_4k                     |     0.246 |
-|     U0                            |     0.246 |
-|       synth_options.dist_mem_inst |     0.246 |
-|   mycpu0                          |     1.951 |
-|     _alu                          |     0.060 |
-|     _pc                           |     0.534 |
-|     _pipeline_reg_D               |     0.297 |
-|     _pipeline_reg_E               |     0.308 |
-|     _pipeline_reg_M               |     0.121 |
-|     _pipeline_reg_W               |     0.132 |
-|     _pred_pc                      |     0.040 |
-|     _regfile                      |     0.101 |
+|   inst_rom_4k                     |     0.259 |
+|     U0                            |     0.259 |
+|       synth_options.dist_mem_inst |     0.259 |
+|   my_player                       |     0.550 |
+|   mycpu0                          |     2.049 |
+|     _alu                          |     0.065 |
+|     _pc                           |     0.614 |
+|     _pipeline_reg_D               |     0.298 |
+|     _pipeline_reg_E               |     0.433 |
+|     _pipeline_reg_M               |     0.127 |
+|     _pipeline_reg_W               |     0.370 |
+|     _pred_pc                      |     0.039 |
+|     _regfile                      |     0.103 |
 +-----------------------------------+-----------+
 
 
